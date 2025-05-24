@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Casino C/C++: g++.exe build active file",
+			"command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+			"args": [
+				"-Iinclude", // Include your include directory
+                "main.cpp",
+				"src/Game.cpp",
+                "src/utils.cpp",
+				"-fdiagnostics-color=always",
+				// "${file}",
+				"-o",
+				"${fileDirname}\\casino.exe",
+				"-g",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\msys64\\ucrt64\\bin\\g++.exe"
+		}
+	]
+}

@@ -10,6 +10,7 @@
                 "main.cpp",
 				"src/Game.cpp",
                 "src/utils.cpp",
+				"src/Roulette.cpp",
 				"-fdiagnostics-color=always",
 				// "${file}",
 				"-o",

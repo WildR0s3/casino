@@ -22,12 +22,14 @@ class Game {
 
         bool play;
         int currentGame;
+        int startingMoney;
 
         map<char, void (Game::*)()> main_map;
         map<int, string> selection;
 
         void initialize_selection_map();
         void initialize_mainloop_map();
+        void runRoulette();
 
 
 };

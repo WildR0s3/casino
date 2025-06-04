@@ -30,6 +30,7 @@ class Game {
         void initialize_selection_map();
         void initialize_mainloop_map();
         void runRoulette();
+        void runDice();
 
 
 };

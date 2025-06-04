@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "utils.h"
 #include "Roulette.h"
+#include "Dice.h"
 #include <iostream>
 #include <map>
 #include <functional>
@@ -42,11 +43,12 @@ void Game::selectGame() {
   
     cout << "What would you like to play me Dear? " << endl;
     cout << "We have: \n";
-    cout << "1. BlackJack" << endl;
+    cout << "1. Dice - pass line" << endl;
     cout << "2. Roullete" << endl;
     cout << "3. Slot machine" << endl;
     cin >> currentGame;
     validateInput();
+    if (currentGame == 1) {runDice();}
     if (currentGame == 2) {runRoulette();}
 
 }
@@ -54,6 +56,10 @@ void Game::selectGame() {
 
 void Game::runRoulette() {
     startingMoney = Roulette(startingMoney).run();
+}
+
+void Game::runDice() {
+    startingMoney = Dice(startingMoney).run();
 }
 
 

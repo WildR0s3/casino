@@ -25,7 +25,7 @@ void reduceMoney(int &currentMoney, int betMoney) {
 
 
 bool check_money(int currentMoney, int betMoney) {
-    if (currentMoney > betMoney) {
+    if (currentMoney >= betMoney) {
         return true;
     } else {
         cout << "You don't have that much money to bet" << endl;
@@ -41,5 +41,7 @@ int grantReward(int ratio, int bet) {
 
 
 void display_money(int playersMoney) {
+    cout << endl;
     cout << "You currently have " << playersMoney << endl;
+    cout << endl;
 }

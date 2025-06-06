@@ -40,7 +40,7 @@ void Game::run() {
 
 
 void Game::selectGame() {
-  
+    cout << endl;
     cout << "What would you like to play me Dear? " << endl;
     cout << "We have: \n";
     cout << "1. Dice - pass line" << endl;
@@ -50,6 +50,11 @@ void Game::selectGame() {
     validateInput();
     if (currentGame == 1) {runDice();}
     if (currentGame == 2) {runRoulette();}
+    if (currentGame ==3) {cout << "Work in progress";}
+    if (startingMoney <= 0) {
+            // cout << "Sorry Casino is not for people broke as a joke. Get out!!!!";
+            play = false;
+        }
 
 }
 

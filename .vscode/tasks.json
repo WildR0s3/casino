@@ -11,6 +11,7 @@
 				"src/Game.cpp",
                 "src/utils.cpp",
 				"src/Roulette.cpp",
+				"src/Dice.cpp",
 				"-fdiagnostics-color=always",
 				// "${file}",
 				"-o",
